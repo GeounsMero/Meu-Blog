@@ -1,0 +1,140 @@
+
+body {
+  background-color: #000000;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 20px;
+}
+
+.logo {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.logo pre {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 10px;
+  line-height: 1.2;
+  white-space: pre;
+  background: linear-gradient(90deg, hwb(300 63% 36%), hwb(0 36% 64%));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: none;
+}
+
+.separador {
+  width: 80%;
+  height: 2px;
+  margin: 25px auto 35px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    gray,
+    hwb(0 100% 0%),
+    #343335,
+    transparent
+  );
+}
+
+.pixel {
+  color: #ffffff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  line-height: 2.2;
+  padding: 20px 15px;
+  margin: 25px 0 40px;
+  background: linear-gradient(135deg, #11071c, #08050d);
+  border-left: 3px solid #838383;
+  border-top: 1px solid #d2cfd4;
+  border-bottom: 1px solid #434244;
+}
+
+.pixel::after {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 3px;
+  margin: 20px auto 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    whitesmoke
+    white
+    transparent
+  );
+}
+
+.secao {
+  margin: 35px 0;
+  padding: 18px;
+  background-color: #08050d;
+  border-left: 2px solid white;
+}
+
+h2,
+h3 {
+  color: white;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 0;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid white;
+}
+
+
+h4 {
+  color: whitesmoke;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+
+p:not(.pixel) {
+  color: gray;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  line-height: 2.5;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.secao p:last-child {
+  margin-bottom: 0;
+}
+
+
+.foto {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 6px;
+  box-shadow: 0 0 12px darkgray;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px lightgray;
+}
+
+
+body > h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 0px 0 0px;
+}
